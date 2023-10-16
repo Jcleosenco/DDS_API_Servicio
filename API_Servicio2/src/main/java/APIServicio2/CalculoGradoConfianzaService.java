@@ -19,12 +19,12 @@ public class CalculoGradoConfianzaService {
         return new ApiDTO(username,gradoDeConfianza);
     }
 
-    public ApiDTO calcularGradoConfianzaComunidad(String nombre, List<APIServicio.ApiMain.UsuarioData> usuarios) {
+    public ApiDTO calcularGradoConfianzaComunidad(String nombre, List<ApiMain.UsuarioData> usuarios) {
         double puntosConfianzaComunidad = 0;
         double puntosAdescontar = 0;
         List<Double> listaPuntos = new ArrayList<>();
 
-        for(APIServicio.ApiMain.UsuarioData usuario : usuarios) {
+        for(ApiMain.UsuarioData usuario : usuarios) {
             List<IncidenteAPI> incidentesAbiertos = usuario.getIncidentesAbiertos();
             List<IncidenteAPI> incidentesCerrados = usuario.getIncidentesCerrados();
             Double puntosDeConfianza = calcularPuntosConfianzaUsuario(incidentesAbiertos,incidentesCerrados);

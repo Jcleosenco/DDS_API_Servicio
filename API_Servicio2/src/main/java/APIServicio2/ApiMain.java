@@ -9,7 +9,7 @@ import static spark.Spark.*;
 public class ApiMain {
     public static void main(String[] args) {
         // Defino servidor
-        port(8090);
+        port(8081);
 
         // Defino controllers
         CalculoGradoConfianzaController calculoGradoConfianzaController = new CalculoGradoConfianzaController();

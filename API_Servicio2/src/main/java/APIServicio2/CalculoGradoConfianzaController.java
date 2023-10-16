@@ -1,3 +1,4 @@
+package APIServicio2;
 
 import java.util.List;
 
@@ -14,7 +15,7 @@ public class CalculoGradoConfianzaController {
         return calculoGradoConfianzaService.calcularGradoConfianzaUsuario(username,incidentesAbiertos,incidentesCerrados);
     }
 
-    public ApiDTO calcularGradoConfianzaComunidad(String nombre, List<APIServicio.ApiMain.UsuarioData> usuarios) {
+    public ApiDTO calcularGradoConfianzaComunidad(String nombre, List<ApiMain.UsuarioData> usuarios) {
         return calculoGradoConfianzaService.calcularGradoConfianzaComunidad(nombre,usuarios);
     }
 }

@@ -9,8 +9,8 @@
     <artifactId>ejercicio</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-    <name>ejercicio</name>
-    <url>https://github.com/dds-utn</url>
+    <name>DDS_API_Servicio</name>
+    <url>https://github.com/Jcleosenco/DDS_API_Servicio</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -37,6 +37,12 @@
             <artifactId>lombok</artifactId>
             <version>RELEASE</version>
             <scope>compile</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-crypto</artifactId>
+            <version>5.3.2.RELEASE</version>
         </dependency>
 
         <dependency>
@@ -124,25 +130,14 @@
         </dependency>
 
         <dependency>
-            <groupId>io.javalin</groupId>
-            <artifactId>javalin</artifactId>
-            <version>5.6.1</version>
+            <groupId>com.sparkjava</groupId>
+            <artifactId>spark-core</artifactId>
+            <version>2.9.4</version>
         </dependency>
         <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-simple</artifactId>
-            <version>1.7.7</version>
-        </dependency>
-        <dependency>
-            <groupId>com.fasterxml.jackson.core</groupId>
-            <artifactId>jackson-databind</artifactId>
-            <version>2.15.1</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.github.jknack</groupId>
-            <artifactId>handlebars</artifactId>
-            <version>4.3.1</version>
+            <groupId>com.sparkjava</groupId>
+            <artifactId>spark-template-handlebars</artifactId>
+            <version>2.7.1</version>
         </dependency>
 
     </dependencies>
